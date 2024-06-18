@@ -36,7 +36,7 @@ public class DepartmentController {
 	}
 	
 	@PostMapping("/update/{department_id}/{department_name}")
-	public String updateDepartmentByID(@PathVariable long department_id,String department_name) {
+	public String updateDepartmentByID(@PathVariable long department_id,@PathVariable String department_name) {
 		return service.updateDepartmentByID(department_id,department_name);
 	}
 	

@@ -37,7 +37,7 @@ public class CourseController {
 		return service.insertCourse(course);
 	}
 	@PutMapping("/update/{course_id}/{course_name}")
-	public String UpdateCourseById(@PathVariable long course_id,String course_name) {
+	public String UpdateCourseById(@PathVariable long course_id,@PathVariable String course_name) {
 		return service.UpdateCourseById(course_id,course_name);
 	}
 	@DeleteMapping("/delete/{course_id}")

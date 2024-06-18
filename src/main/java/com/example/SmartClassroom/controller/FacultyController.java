@@ -35,7 +35,7 @@ public class FacultyController {
 		return service.inertFaculty(faculty);
 	}
 	@PutMapping("/upadate/{faculty_id}/{faculty_name}")
-	public String upadeFacultyById(@PathVariable long faculty_id,String faculty_name) {
+	public String upadeFacultyById(@PathVariable long faculty_id,@PathVariable String faculty_name) {
 		return service.upadeFacultyById(faculty_id,faculty_name);
 	}
 	

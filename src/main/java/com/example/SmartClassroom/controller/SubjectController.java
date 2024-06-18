@@ -36,7 +36,7 @@ public class SubjectController {
 		return service.insertSubject(subject);
 	}
 	@PutMapping("/update/{subject_id}/{subject_name}")
-	public String upadatesubjectById(@PathVariable long subject_id,String subject_name) {
+	public String upadatesubjectById(@PathVariable long subject_id,@PathVariable String subject_name) {
 		return service.upadatesubjectById(subject_id,subject_name);
 	}
 	@DeleteMapping("/delete/{subject_id}")
